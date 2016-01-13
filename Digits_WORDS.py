@@ -74,11 +74,11 @@ def Word_Conversion(digilist,words):
                     count +=1
                     continue
             elif len(digilist)>3 and digilist[count+1]!=0 :
-                wstr=words[item]+" "+"hundred and"+" "+wstr.lower()
+                wstr=words[item]+" "+"hundred "+" "+wstr.lower()
                 count+=1
                 continue
             else:
-                wstr=words[item]+" "+"hundred and"+" "+wstr.lower()
+                wstr=words[item]+" "+"hundred "+" "+wstr.lower()
         #Check for the thousand place 
         if count==3 :
             if item==0 :
